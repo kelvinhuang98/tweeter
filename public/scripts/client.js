@@ -63,4 +63,13 @@ $(document).ready(function () {
     </article>`);
     return $tweet;
   };
+
+  $("#tweet-form").submit(function (event) {
+    // prevent default form submission behaviour
+    event.preventDefault();
+    // convert submitted form data into a query string
+    const newTweet = $(this).serialize();
+    // send seralized form data to the server
+    $.post("/tweets", newTweet, () => {});
+  });
 });
