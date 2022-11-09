@@ -50,9 +50,16 @@ $(document).ready(function () {
   $("#tweet-form").submit(function (event) {
     // prevent default form submission behaviour
     event.preventDefault();
-    // convert submitted form data into a query string
-    const newTweet = $(this).serialize();
-    // send seralized form data to the server
-    $.post("/tweets", newTweet);
+    const inputLength = $(this).find("#tweet-text").val().length;
+    if (inputLength === "" || inputLength === null) {
+      alert("Error: You cannot submit an empty tweet!");
+    } else if (inputLength > 140) {
+      alert("Error: You have exceeded the maximum characters in your tweet!");
+    } else {
+      // convert submitted form data into a query string
+      const newTweet = $(this).serialize();
+      // send seralized form data to the server
+      $.post("/tweets", newTweet);
+    }
   });
 });
