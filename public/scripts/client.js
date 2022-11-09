@@ -41,7 +41,7 @@ $(document).ready(function () {
   // function that uses jQuery to make a request to /tweets and receive the array of tweets as JSON
   const loadTweets = () => {
     $.get("/tweets", (tweets) => {
-      renderTweets(tweets);
+      renderTweets(tweets.reverse());
     });
   };
 
@@ -59,7 +59,9 @@ $(document).ready(function () {
       // convert submitted form data into a query string
       const newTweet = $(this).serialize();
       // send seralized form data to the server
-      $.post("/tweets", newTweet);
+      $.post("/tweets", newTweet, () => {
+        loadTweets();
+      });
     }
   });
 });
