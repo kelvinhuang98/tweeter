@@ -56,15 +56,19 @@ $(document).ready(function () {
   };
 
   loadTweets();
+  $(".errorEmptyTweet").hide();
+  $(".errorExceedMaxChars").hide();
 
   $("#tweet-form").submit(function (event) {
     // prevent default form submission behaviour
     event.preventDefault();
     const inputLength = $(this).find("#tweet-text").val().length;
     if (!inputLength) {
-      alert("Error: You cannot submit an empty tweet!");
+      $(".errorExceedMaxChars").hide();
+      $(".errorEmptyTweet").slideDown("slow");
     } else if (inputLength > 140) {
-      alert("Error: You have exceeded the maximum characters in your tweet!");
+      $(".errorEmptyTweet").hide();
+      $(".errorExceedMaxChars").slideDown("slow");
     } else {
       // convert submitted form data into a query string
       const newTweet = $(this).serialize();

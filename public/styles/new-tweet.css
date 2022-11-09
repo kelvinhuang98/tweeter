@@ -38,11 +38,39 @@
 }
 
 .counter {
-display:flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #tweet-button:hover {
   background-color: #5f80ec;
   cursor: pointer;
+}
+
+h2{
+  margin-bottom: 15px;
+}
+
+.errorExceedMaxChars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  border: 3px solid red;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.errorEmptyTweet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  border: 3px solid red;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.errorMessage {
+  margin: 0px 30px 0px 30px;
 }

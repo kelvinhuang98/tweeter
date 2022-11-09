@@ -35,7 +35,7 @@
     <nav>
       <span class="logo">tweeter</span>
       <div class="write-tweet">
-        <span><strong>Write</strong> a new tweet</span>
+        <span class="fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: ; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"><strong>Write</strong> a new tweet</span>
         <i class="fa-solid fa-angles-down fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: ; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"></i>
       </div>
     </nav>
@@ -54,6 +54,16 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        <div class="errorExceedMaxChars">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span class="errorMessage">You have exceeded the maximum characters in your tweet!</span>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <div class="errorEmptyTweet">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span class="errorMessage">You cannot submit an empty tweet!</span>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
         <form method="POST" action="/tweets" id="tweet-form">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="new-tweet-footer">
