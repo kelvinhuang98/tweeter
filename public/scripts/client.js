@@ -62,7 +62,7 @@ $(document).ready(function () {
       // convert submitted form data into a query string
       const newTweet = $(this).serialize();
       // send seralized form data to the server
-      $.post("/tweets", newTweet).then((resolve) => {
+      $.post("/tweets", newTweet, () => {
         // clears the form after submission
         $(this).get(0).reset();
         // resets the character count after submission
