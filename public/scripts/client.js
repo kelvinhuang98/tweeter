@@ -5,6 +5,13 @@
  */
 
 $(document).ready(function () {
+  // function to re-encode text so that unsafe characters are converted into a safe "encoded" representation
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   // function responsible for taking in an array of tweet objects and appending each one to the #tweets-container
   const renderTweets = function (tweets) {
     // remove elements of tweets-container to ensure that existing tweets do not get appended multiple times
@@ -28,7 +35,7 @@ $(document).ready(function () {
         </div>
         <span class="tweet-header-handle">${tweet.user.handle}</span>
       </header>
-      <p class="tweet-content">${tweet.content.text}</p>
+      <p class="tweet-content">${escape(tweet.content.text)}</p>
       <footer class="tweet-footer">
         <p class="tweet-footer-date">${timeago.format(tweet.created_at)}</p>
         <div class="tweet-footer-icons">
