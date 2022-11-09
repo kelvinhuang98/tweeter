@@ -7,6 +7,8 @@
 $(document).ready(function () {
   // function responsible for taking in an array of tweet objects and appending each one to the #tweets-container
   const renderTweets = function (tweets) {
+    // remove elements of tweets-container to ensure that existing tweets do not get appended multiple times
+    $(".tweets-container").empty();
     // loops through tweets
     for (const tweet of tweets) {
       // calls createTweetElement for each tweet
@@ -41,6 +43,7 @@ $(document).ready(function () {
   // function that uses jQuery to make a request to /tweets and receive the array of tweets as JSON
   const loadTweets = () => {
     $.get("/tweets", (tweets) => {
+      // use .reverse() to render tweets based on date created
       renderTweets(tweets.reverse());
     });
   };
@@ -59,7 +62,11 @@ $(document).ready(function () {
       // convert submitted form data into a query string
       const newTweet = $(this).serialize();
       // send seralized form data to the server
-      $.post("/tweets", newTweet, () => {
+      $.post("/tweets", newTweet).then((resolve) => {
+        // clears the form after submission
+        $(this).get(0).reset();
+        // resets the character count after submission
+        $(this).find(".counter").val(140);
         loadTweets();
       });
     }
