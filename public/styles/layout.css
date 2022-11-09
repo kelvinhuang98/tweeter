@@ -36,3 +36,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+textarea:focus {
+  outline: 0;
+}
