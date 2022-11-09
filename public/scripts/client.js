@@ -51,7 +51,7 @@ $(document).ready(function () {
     // prevent default form submission behaviour
     event.preventDefault();
     const inputLength = $(this).find("#tweet-text").val().length;
-    if (inputLength === "" || inputLength === null) {
+    if (!inputLength) {
       alert("Error: You cannot submit an empty tweet!");
     } else if (inputLength > 140) {
       alert("Error: You have exceeded the maximum characters in your tweet!");
