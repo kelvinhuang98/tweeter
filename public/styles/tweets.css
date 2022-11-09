@@ -22,6 +22,10 @@
   gap: 15px;
 }
 
+.tweet-header-handle {
+  color: rgb(192, 191, 191);
+}
+
 .tweet-content {
   display: flex;
   align-items: center;
