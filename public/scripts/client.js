@@ -55,7 +55,6 @@ $(document).ready(function () {
     });
   };
 
-  loadTweets();
   $(".errorEmptyTweet").hide();
   $(".errorExceedMaxChars").hide();
 
@@ -83,6 +82,7 @@ $(document).ready(function () {
     }
   });
 
+  // click nav bar button to hide/show tweet form
   $(".write-tweet").on("click", () => {
     if ($(".new-tweet").first().is(":hidden")) {
       $(".new-tweet").slideDown(800);
@@ -90,4 +90,6 @@ $(document).ready(function () {
       $(".new-tweet").slideUp(800);
     }
   });
+
+  loadTweets();
 });
