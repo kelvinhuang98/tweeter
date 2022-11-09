@@ -27,3 +27,7 @@ nav {
 .fa-angles-down {
   color: red;
 }
+
+.write-tweet:hover {
+  cursor: pointer;
+}

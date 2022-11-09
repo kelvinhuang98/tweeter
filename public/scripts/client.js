@@ -82,4 +82,12 @@ $(document).ready(function () {
       });
     }
   });
+
+  $(".write-tweet").on("click", () => {
+    if ($(".new-tweet").first().is(":hidden")) {
+      $(".new-tweet").slideDown(800);
+    } else {
+      $(".new-tweet").slideUp(800);
+    }
+  });
 });

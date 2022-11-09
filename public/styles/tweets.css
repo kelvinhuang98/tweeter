@@ -1,6 +1,7 @@
 .tweets-container {
   background-color: #f4f1ec;
   width: 100%;
+  margin-top: 20px;
 }
 
 .tweet {
