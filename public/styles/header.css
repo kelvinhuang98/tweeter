@@ -1,0 +1,16 @@
+.user-header {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  color: #FFFFFF;
+  background-image: url(../images/asfalt-dark.png);
+  background-color: #d39014;
+  padding-top: 100px;
+}
+
+.username {
+  margin-top: -40px;
+}
