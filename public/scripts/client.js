@@ -55,19 +55,19 @@ $(document).ready(function () {
     });
   };
 
-  $(".errorEmptyTweet").hide();
-  $(".errorExceedMaxChars").hide();
+  $(".error-empty-tweet").hide();
+  $(".error-exceed-max-chars").hide();
 
   $("#tweet-form").submit(function (event) {
     // prevent default form submission behaviour
     event.preventDefault();
     const inputLength = $(this).find("#tweet-text").val().length;
     if (!inputLength) {
-      $(".errorExceedMaxChars").hide();
-      $(".errorEmptyTweet").slideDown("slow");
+      $(".error-exceed-max-chars").hide();
+      $(".error-empty-tweet").slideDown("slow");
     } else if (inputLength > 140) {
-      $(".errorEmptyTweet").hide();
-      $(".errorExceedMaxChars").slideDown("slow");
+      $(".error-empty-tweet").hide();
+      $(".error-exceed-max-chars").slideDown("slow");
     } else {
       // convert submitted form data into a query string
       const newTweet = $(this).serialize();

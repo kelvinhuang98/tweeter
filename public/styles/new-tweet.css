@@ -51,7 +51,7 @@ h2{
   margin-bottom: 15px;
 }
 
-.errorExceedMaxChars {
+.error-exceed-max-chars {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +61,7 @@ h2{
   margin-bottom: 15px;
 }
 
-.errorEmptyTweet {
+.error-empty-tweet {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +71,6 @@ h2{
   margin-bottom: 15px;
 }
 
-.errorMessage {
+.error-message {
   margin: 0px 30px 0px 30px;
 }

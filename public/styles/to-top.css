@@ -1,0 +1,13 @@
+.to-top {
+  color: red;
+  display: flex;
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  font-size: 4rem;
+}
+
+.to-top:hover {
+  cursor: pointer;
+  color: rgb(255, 93, 93)
+}
