@@ -21,11 +21,11 @@ This repository is the starter code for the project: Students will fork and clon
 ## Final Product
 
 <div style="text-align:center">
-!["GIF of Homepage"](https://github.com/kelvinhuang98/tweeter/blob/master/docs/Home.gif)
-!["GIF of Hover Effects"](https://github.com/kelvinhuang98/tweeter/blob/master/docs/Hover-Effects.gif)
-!["GIF of Form Toggle"](https://github.com/kelvinhuang98/tweeter/blob/master/docs/Form-Toggle.gif)
-!["GIF of Tweet Submission"](https://github.com/kelvinhuang98/tweeter/blob/master/docs/Submit-Tweet.gif)
-!["GIF of Return to Top Button"](https://github.com/kelvinhuang98/tweeter/blob/master/docs/Scroll-To-Top.gif)
-!["GIF of Empty Submission Error Message"](https://github.com/kelvinhuang98/tweeter/blob/master/docs/Error1.gif)
-!["GIF of Exceed Maximum Characters Error Message"](https://github.com/kelvinhuang98/tweeter/blob/master/docs/Error2.gif)
+<img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Home.gif" alt="GIF of Home Page" />
+<img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Hover-Effects.gif" alt="GIF of Hover Effects" />
+<img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Form-Toggle.gif" alt="GIF of Form Toggle" />
+<img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Submit-Tweet.gif" alt="GIF of Tweet Submission" />
+<img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Scroll-To-Top.gif" alt="GIF of Return to Top Button" />
+<img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Error1.gif" alt="GIF of Empty Tweet Submission Error Message" />
+<img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Error2.gif" alt="GIF of Exceed Maximum Characters Error Message" />
 </div>
