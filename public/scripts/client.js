@@ -69,6 +69,9 @@ $(document).ready(function () {
       $(".error-empty-tweet").hide();
       $(".error-exceed-max-chars").slideDown("slow");
     } else {
+      // slide error messages up if it is not hidden
+      $(".error-empty-tweet").slideUp("slow");
+      $(".error-exceed-max-chars").slideUp("slow");
       // convert submitted form data into a query string
       const newTweet = $(this).serialize();
       // send seralized form data to the server
