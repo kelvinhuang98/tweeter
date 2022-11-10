@@ -21,8 +21,10 @@ Tweeter is a simple, single-page Twitter clone.
 ## Final Product
 
 <p align="center">
-<strong>Home page of Tweeter</strong>
+<div>
+<strong>Tweeter Home Page</strong>
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Home.gif" alt="GIF of Home Page" />
+</div>
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Hover-Effects.gif" alt="GIF of Hover Effects" />
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Form-Toggle.gif" alt="GIF of Form Toggle" />
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Submit-Tweet.gif" alt="GIF of Tweet Submission" />
