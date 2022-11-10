@@ -14,3 +14,10 @@
 .username {
   margin-top: -40px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .user-header {
+    margin: 160px 20px 0px 50px;
+    padding: 10px 0px 10px 0px;
+  }
+}
