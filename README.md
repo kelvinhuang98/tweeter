@@ -20,7 +20,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-<div style="text-align:center">
+<p align="center">
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Home.gif" alt="GIF of Home Page" />
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Hover-Effects.gif" alt="GIF of Hover Effects" />
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Form-Toggle.gif" alt="GIF of Form Toggle" />
@@ -28,4 +28,4 @@ This repository is the starter code for the project: Students will fork and clon
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Scroll-To-Top.gif" alt="GIF of Return to Top Button" />
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Error1.gif" alt="GIF of Empty Tweet Submission Error Message" />
 <img src="https://github.com/kelvinhuang98/tweeter/blob/master/docs/Error2.gif" alt="GIF of Exceed Maximum Characters Error Message" />
-</div>
+</p>
