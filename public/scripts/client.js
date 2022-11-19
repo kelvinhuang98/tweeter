@@ -86,6 +86,8 @@ $(document).ready(function () {
   });
 
   // click nav bar button to hide/show tweet form
+  $(".new-tweet").hide();
+
   $(".write-tweet").on("click", () => {
     if ($(".new-tweet").first().is(":hidden")) {
       $(".new-tweet").slideDown(800);
